@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFDE00;
+}
+
+.pikachu {
+	width: 300px;
+	height: 400px;
+	margin: 50px auto;
+	position: relative;
+	background-color: #FEE84F;
+	border-radius: 50% 50% 40% 40%;
+	box-shadow: 0 10px 0 #E2C500;
+}
+
+.ears {
+	position: absolute;
+	top: -70px;
+	left: 50%;
+	margin-left: -80px;
+}
+
+.left-ear,
+.right-ear {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 30px 0 30px;
+	border-color: #FFDE00 transparent transparent transparent;
+	position: absolute;
+}
+
+.left-ear {
+	transform: rotate(-45deg);
+	left: -60px;
+}
+
+.right-ear {
+	transform: rotate(45deg);
+	right: -60px;
+}
+
+.face {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -60px;
+	margin-left: -80px;
+	width: 160px;
+	height: 120px;
+	background-color: #FEE84F;
+	border-radius: 50%;
+	box-shadow: -10px 0 0 #E2C500, 10px 0 0 #E2C500;
+}
+
+.eyes {
+	width: 30px;
+	height: 30px;
+	background-color: #222222;
+	border-radius: 50%;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -45px;
+}
+
+.eyes::before {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 12px;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	position: absolute;
+	top: 6px;
+	left: 6px;
+}
+
+.nose {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 12px 15px 12px;
+	border-color: transparent transparent #222222 transparent;
+	position: absolute;
+	top: 60
+
+
